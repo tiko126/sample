@@ -3,3 +3,8 @@
   action>: OpenBrowser
   url: 'https://tutorial.co.jp/'
   headless: true
+
+# ブラウザを閉じる
++close_browser_1:
+  action>: CloseBrowser
+  browser: +open_browser_1
