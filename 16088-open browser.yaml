@@ -1,0 +1,5 @@
+# ブラウザを開く
++open_browser_1:
+  action>: OpenBrowser
+  url: 'https://tutorial.co.jp/'
+  headless: true
