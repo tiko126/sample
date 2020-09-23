@@ -1,0 +1,19 @@
+# TRY
++try_1:
+  try>: error1
+  _do:
+
+    # テキストを作成
+    +text_1:
+      action>: Text
+      text: 'try1 > before  kill attempt'
+
+    # 強制終了
+    +kill_attempt_1:
+      action>: KillAttempt
+      message: 'kill attempt'
+
+    # テキストを作成
+    +text_2:
+      action>: Text
+      text: 'try1 > after kill attempt'

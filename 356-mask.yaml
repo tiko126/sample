@@ -1,0 +1,33 @@
+# 真のときです
++if_1:
+  if>: true
+  _do:
+    
+    # ブラウザを開く
+    +open_browser_1:
+      action>: OpenBrowser
+      url: https://tutorial.co.jp
+      headless: true
+    
+    # パスワード入力
+    +type_password_1:
+      action>: TypePassword
+      browser: browser
+      selector: selector
+      password: "********"
+      ignoreError: true
+    
+    # ブラウザを閉じる
+    +close_browser_1:
+      action>: CloseBrowser
+      browser: "+type_password_1"
+
+# テキストを作成
++text_1:
+  action>: Text
+  text: end
+
+# テキストを作成
++text_2:
+  action>: Text
+  text: okです

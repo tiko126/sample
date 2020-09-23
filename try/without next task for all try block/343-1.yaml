@@ -1,0 +1,9 @@
+# TRY1
++try_1:
+  try>: error1
+  _do:
+
+    # テキストを作成
+    +text_1:
+      action>: Text
+      text: 'in try1'

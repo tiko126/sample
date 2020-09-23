@@ -1,0 +1,21 @@
+# テキストを作成
++text_1:
+  action>: Text
+  text: 'access token'
+
+# TRY
++try_1:
+  try>: error
+  _do:
+
+    # Gmailを取得
+    +gmail_get_1:
+      action>: GmailGet
+      query: 'from: me'
+      provider: +text_1
+      limit: 1
+
+# テキストを作成
++text_2:
+  action>: Text
+  text: ${error.message}
