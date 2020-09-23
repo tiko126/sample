@@ -1,9 +1,0 @@
-# HTTPリクエスト
-+h_t_t_p_request_1:
-  action>: HTTPRequest
-  url: ''
-  params: ''
-  method: ''
-  headers:
-    access_token: "********"
-  multipart: false
